@@ -1,0 +1,23 @@
+# HSV Color Ranges for Object Detection
+# Hue: 0-179, Saturation: 0-255, Value: 0-255
+
+colors:
+  red:
+    lower: [0, 120, 70]
+    upper: [10, 255, 255]
+    lower2: [170, 120, 70]    # red wraps around in HSV
+    upper2: [180, 255, 255]
+
+  green:
+    lower: [40, 50, 50]
+    upper: [80, 255, 255]
+
+  blue:
+    lower: [100, 150, 50]
+    upper: [140, 255, 255]
+
+# Place zone position (x, y, z) in robot base frame
+place_zone:
+  x: 0.3
+  y: -0.3
+  z: 0.15

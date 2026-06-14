@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>pick_and_place</name>
+  <version>1.0.0</version>
+  <description>Autonomous vision-guided pick and place using ROS 2, MoveIt2, OpenCV and Gazebo</description>
+  <maintainer email="rohanofficials123@gmail.com">Rohan Deshmukh</maintainer>
+  <license>MIT</license>
+
+  <!-- ROS 2 core -->
+  <depend>rclpy</depend>
+
+  <!-- Messages -->
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>visualization_msgs</depend>
+
+  <!-- MoveIt2 -->
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>moveit_msgs</depend>
+
+  <!-- TF -->
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
+  <!-- CV Bridge (OpenCV ↔ ROS) -->
+  <depend>cv_bridge</depend>
+
+  <!-- Launch -->
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
